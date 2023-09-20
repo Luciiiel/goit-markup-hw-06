@@ -319,10 +319,6 @@ a {
   outline-width: 0;
 }
 
-.user-input:hover {
-  border: 1px solid var(--iris-color);
-}
-
 .user-comment {
   height: 120px;
 }
