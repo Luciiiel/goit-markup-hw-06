@@ -306,6 +306,7 @@ a {
   margin-top: 4px;
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal);
+  background-color: var(--dairy-color);
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 400;
