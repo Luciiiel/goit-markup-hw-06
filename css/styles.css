@@ -277,12 +277,12 @@ a {
 }
 
 .close-button-icon:hover {
-  fill: var(--white-color);
+  fill: currentColor;
 }
 
 /* modal content */
 .modal-heading {
-  margin-bottom: 16px;
+  margin-bottom: 34px;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -290,20 +290,44 @@ a {
 }
 
 .user-label {
+  position: relative;
   display: block;
-  margin-bottom: 8px;
+  margin-top: 26px;
   color: var(--lightslate-color);
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
 }
 
+.user-icon {
+  position: absolute;
+  fill: var(--navyblue-color);
+  width: 18px;
+  height: 18px;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-icon-telephone {
+  height: 13px;
+}
+
+.user-icon-email {
+  height: 23px;
+}
+
+.user-label-title {
+  position: absolute;
+  bottom: calc(100% + 4px);
+}
+
 .user-input {
   display: block;
-  padding: 8px 16px;
+  padding: 8px 38px;
   width: 100%;
   height: 40px;
-  margin-top: 4px;
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal);
   background-color: var(--dairy-color);
@@ -315,13 +339,27 @@ a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-input:focus-visible {
+.user-input:focus {
   border: 1px solid var(--iris-color);
   outline-width: 0;
 }
 
+.user-input:focus + .user-icon {
+  fill: var(--iris-color);
+}
+
+.user-input:hover {
+  border: 1px solid var(--iris-color);
+  outline-width: 0;
+}
+
+.user-input:hover + .user-icon {
+  fill: var(--iris-color);
+}
+
 .user-comment {
   height: 120px;
+  padding-left: 16px;
 }
 
 .user-comment[name="comment"]::placeholder {
@@ -342,12 +380,29 @@ a {
 }
 
 .checkbox-input {
+  appearance: none;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox-icon {
   width: 16px;
   height: 16px;
+  padding: 3px;
   margin-right: 8px;
-  stroke-width: 1px;
-  stroke: var(--navyblue-color);
-  background-color: var(--iris-color);
+  border: 1px solid var(--navyblue-modal);
+  border-radius: 2px;
+  fill: transparent;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  border: 0;
+  background-color: var(--ocean-color);
+  fill: var(--white-color);
 }
 
 .checkbox-policy {
@@ -363,16 +418,13 @@ a {
 .user-submit {
   /*Text */
   color: var(--white-color);
-  text-align: center;
   font-family: "Roboto";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: 0.64px;
   /* button */
-  width: 169px;
-  height: 56px;
+  padding: 16px 64px;
   border: 0;
   border-radius: 4px;
   background-color: var(--IRIS, #4d5ae5);

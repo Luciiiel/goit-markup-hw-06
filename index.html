@@ -79,19 +79,28 @@
               </button>
               <form class="user-info">
                 <label class="user-label">
-                  Name
+                  <span class="user-label-title">Name</span>
                   <input class="user-input" type="text" />
+                  <svg class="user-icon">
+                    <use href="./images/icons.svg#person-icon" />
+                  </svg>
                 </label>
                 <label class="user-label">
-                  Phone
+                  <span class="user-label-title">Phone</span>
                   <input class="user-input" type="tel" />
+                  <svg class="user-icon user-icon-telephone">
+                    <use href="./images/icons.svg#telephone-icon" />
+                  </svg>
                 </label>
                 <label class="user-label">
-                  Email
+                  <span class="user-label-title">Email</span>
                   <input class="user-input" type="email" />
+                  <svg class="user-icon user-icon-email">
+                    <use href="./images/icons.svg#email-icon" />
+                  </svg>
                 </label>
                 <label class="user-label">
-                  Comment
+                  <span class="user-label-title">Comment</span>
                   <textarea
                     class="user-input user-comment"
                     name="comment"
@@ -100,10 +109,13 @@
                 </label>
                 <label class="user-checkbox">
                   <input class="checkbox-input" type="checkbox" />
-                  <div>
+                  <svg class="checkbox-icon">
+                    <use href="./images/icons.svg#check-icon">
+                  </svg>
+                  <span>
                     I accept the terms and conditions of the
                     <a class="checkbox-policy" href="/">Privacy Policy</a>
-                  </div>
+                  </span>
                 </label>
                 <div class="user-button">
                   <button class="user-submit" type="submit">Send</button>
