@@ -98,20 +98,6 @@ textarea {
   padding: 100px 0;
 }
 
-/* .hero-container {
-  padding: 188px 0;
-}
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 120px 0;
-}
-
-.about-container {
-  padding-bottom: 0px;
-} */
-
 /* WEBSTUDIO logo link */
 .nav {
   display: flex;
@@ -197,15 +183,6 @@ textarea {
   background-size: cover;
 }
 
-.hero-container-content {
-  margin: 0 315px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
-}
-
 .hero-heading {
   color: var(--white-color);
   text-align: center;
@@ -223,7 +200,10 @@ textarea {
   background-color: var(--iris-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 500;
+  line-height: 24px;
   letter-spacing: 0.64px;
   border-radius: 4px;
   border: 0;
